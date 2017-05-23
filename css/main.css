@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+    body {
+        padding-left: 300px;
+        padding-right: 35px;
+    }
+     @font-face {
+            font-family: OpenSansRegular;
+            src: url('../fonts/open_sans/OpenSans-Regular.ttf');
+        }
+    @font-face {
+            font-family: OpenSansBold;
+            src: url('../fonts/open_sans/OpenSans-Bold.ttf');
+        }
+
+    @font-face {
+            font-family: ArvoBold;
+            src: url('../fonts/arvo_bold/Arvo-Bold.ttf');
+        }
+    @font-face {
+            font-family: AvenirLTStdBlack;
+            src: url('../fonts/AvenirLTStd/AvenirLTStd-Black.otf');
+        }
+    @font-face {
+            font-family: AvenirLTStdBook;
+            src: url('../fonts/AvenirLTStd/AvenirLTStd-Book.otf');
+        }
+
+
+        .main {
+            margin: auto;
+            min-width: 320px;
+            max-width: 1920px;
+            width: 100%;
+        }
+            header {
+                padding-top: 37px;
+                min-width: 320px;
+                width: 100%;
+                font-family: OpenSansRegular;
+                text-align: center;
+                min-height: 100px;
+                height: 100%;
+            }
+            header > p:nth-child(1) {
+                color: #000000;
+                font-size: 28px;
+            }
+            header > p:nth-child(2) {
+                padding-top: 14px;
+                color: #888888;
+                font-size: 16px;
+            }
+            .mostPopular {
+                position: relative;
+                z-index: 3;
+                width:100%;
+
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+            }
+            .CorrectMostPopular {
+                margin: 0 14px;
+                position: relative;
+                top: -145px;
+            }
+            section {
+                margin-bottom: 24px;
+                padding-bottom: 20px;
+                min-width: 320px;
+                width: 100%;
+                background-color: #fafafa;
+                border: 1px solid #f5f5f5;
+            }
+                .sectionCorrect {
+                    margin: 20px 40px 0 40px;
+
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
+                    .content {
+                        padding-top: 20px;
+                        width: 50%;
+                    }
+                        .contentHead {
+                            margin-bottom: 10px;
+                            font-family: ArvoBold;
+                            font-size: 20px;
+                            letter-spacing: 1px;
+                        }
+                            .contentHeadPro{
+                                color: #00baff;
+                            }
+                            .contentHeadEnter {
+                                color: #83ce00;
+                            }
+                        .price {
+                            font-family: AvenirLTStdBlack;
+                            font-size: 24px;
+                            color: #444444;
+                        }
+                        .specifications > p:nth-child(1){
+                            margin-top: 36px;
+                            margin-left: 26px;
+                            margin-bottom: 10px;
+                            font-family: AvenirLTStdBlack;
+                            font-size: 16px;
+                            color: #444444;
+                        }
+                            .specificationsBasic{
+                                color: #ffe402;
+                            }
+                            .specificationsPro{
+                                color: #1eeffc;
+                            }
+                            .specificationsForm {
+                                font-family: AvenirLTStdBook;
+                                font-size: 16px;
+                                color: #888888;
+                            }
+                    .photoCont {
+                        width: 50%;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-around;
+                    }
+
+                    button {
+                        margin-top: 18px;
+                        width: 200px;
+                        height: 44px;
+                        text-align: center;
+                        font-family: OpenSansBold;
+                        background-color: #3397c9;
+                        color: #ffffff;
+                        font-size: 14px;
+                        text-transform: uppercase;
+                    }
+                    .form {
+                         line-height:34px;
+                    }
+
+@media screen and (max-width: 1200px) {
+    body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media screen and (max-width: 900px) {
+    .sectionCorrect {
+        flex-direction: column-reverse;
+    }
+    .content, .photoCont {
+        text-align: center;
+        width: 100%;
+    }
+}
